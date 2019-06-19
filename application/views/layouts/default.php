@@ -21,13 +21,7 @@
 	<? endforeach ?>
 </head>
 <body>
-	<? include 'application/views/layouts/helpers/header.php' ?>
-	<main>
-		<div id="wrapper">
-			<?= $content ?>
-		</div>
-	</main>
-	<? include 'application/views/layouts/helpers/footer.php' ?>
+	<?= $content ?>
 	<script type="text/javascript" src="/public/style/bootstrap/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="/public/style/bootstrap/bootstrap.js"></script>
 </body>

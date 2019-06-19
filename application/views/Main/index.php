@@ -1,1 +1,2 @@
-<? print_r($test) ?>
+<?= $header ?>
+<?= $footer ?>

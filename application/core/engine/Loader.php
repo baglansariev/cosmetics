@@ -22,7 +22,15 @@
 
 		public function controller($controller)
 		{
-			$path = '\application\controllers\\'.ucfirst($controller);
+			$parts = explode('/', $controller);
+
+			if(is_array($parts)){
+				ucfirst($parts[count($parts)-1]);
+				$parts = implode('\\', $parts);
+			}
+
+			$path = '\application\controllers\\'.$parts;
+
 			if(class_exists($path)){
 				$controller =  new $path;
 			}
