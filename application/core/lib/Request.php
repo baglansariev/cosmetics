@@ -15,6 +15,17 @@
 			return $this->uri;
 		}
 
+		public function getUriWithoutParams()
+		{
+			$uri = explode('?', $this->uri);
+
+			if(is_array($uri)){
+				return array_shift($uri);
+			}
+
+			return $this->uri;
+		}
+
 		public function get($name)
 		{
 			return $_GET[$name];

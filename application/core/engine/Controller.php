@@ -2,8 +2,8 @@
 	namespace application\core\engine;
 
 	use application\core\engine\View;
+	use application\core\engine\Loader;
 	use application\core\lib\Request;
-	use application\core\lib\Loader;
 
 	abstract class Controller
 	{

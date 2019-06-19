@@ -1,5 +1,5 @@
 <?php
-	namespace application\core\lib;
+	namespace application\core\engine;
 
 	class Loader
 	{
@@ -7,7 +7,7 @@
 		public function view($view, $arr = [])
 		{
 
-			$file = 'application/views/'. $view . '.php';
+			$file = VIEWS_PATH. $view . '.php';
 
 			if(file_exists($file)){
 				extract($arr);
