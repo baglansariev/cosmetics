@@ -9,8 +9,8 @@
 	<title><?= $this->asset->getTitle() ?></title>
 	<link rel="shortcut icon" href="/public/images/icons/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="/public/style/css/main.css">
-	<link rel="stylesheet" href="/public/style/css/bootstrap/bootstrap-grid.css">
-	<link rel="stylesheet" href="/public/style/css/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="/public/style/bootstrap/bootstrap-grid.css">
+	<link rel="stylesheet" href="/public/style/bootstrap/bootstrap.css">
 	<? foreach($this->asset->getCss() as $css): ?>
 	<link rel="stylesheet" href="<?= $css ?>">
 	<? endforeach ?>
@@ -28,7 +28,7 @@
 		</div>
 	</main>
 	<? include 'application/views/layouts/helpers/footer.php' ?>
-	<script type="text/javascript" src="/public/style/js/bootstrap/bootstrap.bundle.min.js"></script>
-	<script type="text/javascript" src="/public/style/js/bootstrap/bootstrap.js"></script>
+	<script type="text/javascript" src="/public/style/bootstrap/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="/public/style/bootstrap/bootstrap.js"></script>
 </body>
 </html>

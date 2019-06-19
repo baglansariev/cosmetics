@@ -33,7 +33,7 @@
 				return $controller->$method();
 			}
 			else{
-				return '';
+				return 'Name of the default method of your loading Class have to be "index"';
 			}
 		}
 
