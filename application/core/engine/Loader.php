@@ -47,9 +47,17 @@
 
 		public function model($model)
 		{
-			$path = '\application\models\\'.ucfirst($model);
+			$parts = explode('/', $model);
+
+			if(is_array($parts)){
+				ucfirst($parts[count($parts)-1]);
+				$parts = implode('\\', $parts);
+			}
+
+			$path = '\application\models\\'.$parts;
+
 			if(class_exists($path)){
-				return new $path;
+				$model =  new $path;
 			}
 		}
 	}
