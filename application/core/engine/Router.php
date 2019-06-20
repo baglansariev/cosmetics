@@ -8,12 +8,14 @@
 	{
 		public $routes;
 		public $request;
+		public $view;
 		protected $params = [];
 
 	    public function __construct()
 	    {
 	        $this->routes = require_once(ROUTES_PATH . 'routes.php');
 	        $this->request = new Request;
+	        $this->view = new View;
 	    }
 
 	    public function match()
@@ -35,7 +37,7 @@
 	    		$controller->$action();
 	    	}
 	    	else{
-	    		View::errorResponse(404, 'Страница не найдена');
+	    		$this->view->errorResponse('errors/404', 404);
 	    	}
 	    }
 	}

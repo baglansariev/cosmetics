@@ -25,11 +25,15 @@
 			require_once(LAYOUTS_PATH . $this->layout . '.php');
 		}
 
-		public static function errorResponse($type, $title)
+		public function errorResponse($path, $type)
 		{
 			http_response_code($type);
-			$content = obInclude(VIEWS_PATH . 'errors/' . $type . '.php');
-			require_once(LAYOUTS_PATH . $this->layout . '.php');
+			
+			ob_start();
+			require_once(VIEWS_PATH . $path . '.php');
+			$content = ob_get_clean();
+			
+			require_once(LAYOUTS_PATH . 'default.php');
 			exit();
 		}
 

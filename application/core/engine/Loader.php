@@ -57,7 +57,7 @@
 			$path = '\application\models\\'.$parts;
 
 			if(class_exists($path)){
-				$model =  new $path;
+				return new $path;
 			}
 		}
 	}
