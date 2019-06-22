@@ -40,4 +40,18 @@
 				echo 'В данном тексте нет кириллицы';
 			}
 		}
+
+		public function ucfirstForText($text)
+		{
+			$textAr = explode(' ', $text);
+
+			if(is_array($textAr)){
+				$textAr = array_map('ucfirst', $textAr);
+
+				return implode(' ', $textAr);
+			}
+			else {
+				return ucfirst($text);
+			}
+		}
 	}
