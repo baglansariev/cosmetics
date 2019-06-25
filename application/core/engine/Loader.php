@@ -44,7 +44,7 @@
 				return $controller->$method();
 			}
 			else{
-				return 'Name of the default method of your loading Class (' . $path . ') have to be "index"';
+                return $controller;
 			}
 		}
 
