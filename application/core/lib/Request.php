@@ -1,38 +1,37 @@
 <?
-	namespace application\core\lib;
+namespace application\core\lib;
 
-	class Request
-	{
-		private $uri;
+class Request
+{
+    public $get = array();
+    public $post = array();
+    private $uri;
 
-		public function __construct()
-		{
-			$this->uri = trim($_SERVER['REQUEST_URI'], '/');
-		}
+    public function __construct()
+    {
+        $this->uri = trim($_SERVER['REQUEST_URI'], '/');
+        $this->get = $this->getValue($_GET);
+        $this->post = $this->getValue($_POST);
+    }
 
-		public function getUri()
-		{
-			return $this->uri;
-		}
+    public function getUri()
+    {
+        return $this->uri;
+    }
 
-		public function getUriWithoutParams()
-		{
-			$uri = explode('?', $this->uri);
+    public function getUriWithoutParams()
+    {
+        $uri = explode('?', $this->uri);
 
-			if(is_array($uri)){
-				return array_shift($uri);
-			}
+        if(is_array($uri)){
+            return array_shift($uri);
+        }
 
-			return $this->uri;
-		}
+        return $this->uri;
+    }
 
-		public function get($name)
-		{
-			return $_GET[$name];
-		}
-
-		public function post($name)
-		{
-			return $_POST[$name];
-		}
-	}
+    public function getValue($data)
+    {
+        return $data;
+    }
+}
