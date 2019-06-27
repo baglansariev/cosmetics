@@ -1,3 +1,3 @@
 <header id="header">
-	<h1>Bandura Framework</h1>
+	<h1>Stinger Framework</h1>
 </header>

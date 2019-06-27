@@ -1,2 +1,2 @@
-# bandura
+# stinger
 PHP Framework
