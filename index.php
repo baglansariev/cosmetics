@@ -5,5 +5,5 @@
 	require_once(LIB_PATH . 'devtools.php');
 	require_once(LIB_PATH . 'autoload.php');
 
-	$router = new application\core\engine\Router;
+	$router = new core\engine\Router;
 	$router->run();

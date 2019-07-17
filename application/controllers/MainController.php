@@ -1,7 +1,7 @@
 <?php
-	namespace application\controllers;
+	namespace controllers;
 
-	use application\core\engine\Controller;
+	use core\engine\Controller;
 
 	class MainController extends Controller
 	{
@@ -11,8 +11,8 @@
 	    	$this->view->asset->setMetaDesc('Тестовое описание');
 	    	$this->view->asset->setMetaKeys('ключ1, ключ2');
 	    	$this->view->asset->setTitle('Главная');
-	    	$data['header'] = $this->load->controller('common/HeaderController');
-	    	$data['footer'] = $this->load->controller('common/FooterController');
+	    	$data['header'] = $this->load->controller('common/header');
+	    	$data['footer'] = $this->load->controller('common/footer');
 	    	$this->view->response('Main/index', $data);
 	    }
 	}

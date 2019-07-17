@@ -1,9 +1,9 @@
 <?php
-	namespace application\core\engine;
+	namespace core\engine;
 
-	use application\core\engine\View;
-	use application\core\engine\Loader;
-	use application\core\lib\Request;
+	use core\engine\View;
+	use core\engine\Loader;
+	use core\lib\Request;
 
 	abstract class Controller
 	{
