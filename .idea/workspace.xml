@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd7c21c6-0d0d-4632-b565-92e8f74beab9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/application/controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/TestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/common/FooterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/common/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/common/HeaderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/common/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/engine/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/engine/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/engine/Loader.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/engine/Loader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/engine/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/engine/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/engine/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/engine/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/engine/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/engine/View.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/lib/Asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/lib/Asset.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/lib/Db.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/lib/Db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/lib/LetterChange.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/lib/LetterChange.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/lib/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/lib/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/lib/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +27,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/core/lib/Request.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="-493">
               <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -72,16 +68,7 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/application/core/engine/Loader.php" />
         <option value="$PROJECT_DIR$/application/core/lib/Request.php" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/stinger.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/application/.gitignore" />
       </list>
     </option>
   </component>
@@ -113,20 +100,7 @@
               <item name="stinger" type="b2602c69:ProjectViewProjectNode" />
               <item name="stinger" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stinger" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stinger" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stinger" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stinger" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -135,6 +109,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -162,32 +137,41 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563359973463</updated>
-      <workItem from="1563359975044" duration="1511000" />
+      <workItem from="1563359975044" duration="2107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1511000" />
+    <option name="totallyTimeSpent" value="2107000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-145" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -305,8 +289,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/core/lib/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="-493">
           <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
