@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/stinger.iml" filepath="$PROJECT_DIR$/.idea/stinger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/cosmetolog.iml" filepath="$PROJECT_DIR$/.idea/cosmetolog.iml" />
     </modules>
   </component>
 </project>
