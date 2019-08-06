@@ -19,9 +19,31 @@
         <div class="top-phone">
             <a href="tel:+77024441143">
                 <i class="fas fa-phone-alt"></i>
-                213-334-3688
+                <span>213-334-3688</span>
             </a>
         </div>
     </div>
-    <div class="header-bottom"></div>
+    <div class="header-bottom">
+        <i class="fas fa-bars"></i>
+        <nav class="desktop-menu">
+            <ul>
+                <li>
+                    <a href="">Главная</a>
+                </li>
+                <li>
+                    <a href="">Услуги</a>
+                </li>
+                <li>
+                    <a href="">О нас</a>
+                </li>
+                <li>
+                    <a href="">Курсы</a>
+                </li>
+                <li>
+                    <a href="">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <button id="appointment" type="button">Записаться</button>
+    </div>
 </header>
