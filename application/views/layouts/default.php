@@ -9,6 +9,7 @@
 	<title><?= $this->asset->getTitle() ?></title>
 	<link rel="shortcut icon" href="/public/images/icons/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
     <link  rel="stylesheet" href="/public/style/font-awesome/css/all.min.css">
 	<link rel="stylesheet" href="/public/style/css/main.css">
 	<link rel="stylesheet" href="/public/style/bootstrap/bootstrap-grid.css">

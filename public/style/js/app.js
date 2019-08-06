@@ -1,4 +1,5 @@
 $(function(){
+
     $('.slider').owlCarousel({
         loop:true,
         margin:10,
@@ -14,5 +15,28 @@ $(function(){
                 items:1
             }
         }
-    })
+    });
+
+    sliderTextEffect();
+    $('.item').on('mouseup', function (e) {
+            sliderTextEffect();
+    });
+    $('.item').on('touchmove', function () {
+        sliderTextEffect();
+    });
+    $('.owl-prev').click(function () {
+        sliderTextEffect();
+    });
+    $('.owl-next').click(function () {
+        sliderTextEffect();
+    });
+
+    function sliderTextEffect(){
+        setTimeout(function () {
+            $('.owl-item.active').find('.slide-text').children().each(function(){
+                $(this).fadeIn();
+                $(this).css('filter', 'blur(0px)');
+            });
+        }, 500);
+    }
 });
