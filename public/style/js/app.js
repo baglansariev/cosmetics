@@ -39,4 +39,11 @@ $(function(){
             });
         }, 500);
     }
+    
+    $('.service').on('mouseover', function () {
+        $(this).find('.service-img-cover').fadeIn();
+    });
+    $('.service').on('mouseleave', function () {
+        $(this).find('.service-img-cover').fadeOut();
+    });
 });

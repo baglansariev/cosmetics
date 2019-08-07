@@ -29,7 +29,38 @@
         </div>
     </section>
     <section class="services">
-
+        <div class="services-row">
+            <p class="services-subtitle">Добро пожаловать!</p>
+            <p class="services-title">Наши услуги</p>
+            <p class="services-micro-subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Maiores, nisi, unde. Aut dignissimos enim et ex in natus sit veritatis voluptatem!
+                Maiores, nisi, unde. Aut dignissimos enim et ex in natus sit veritatis voluptatem!
+            </p>
+            <div class="service-list">
+                <div class="service">
+                    <div class="service-image">
+                        <img src="/public/images/service-1.jpg" alt="">
+                        <span class="service-img-cover"></span>
+                    </div>
+                    <p class="service-heading">Lorem ipsum dolor sit</p>
+                </div>
+                <div class="service">
+                    <div class="service-image">
+                        <img src="/public/images/service-2.jpg" alt="">
+                        <span class="service-img-cover"></span>
+                    </div>
+                    <p class="service-heading">Lorem ipsum dolor sit</p>
+                </div>
+                <div class="service">
+                    <div class="service-image">
+                        <img src="/public/images/service-3.jpg" alt="">
+                        <span class="service-img-cover"></span>
+                    </div>
+                    <p class="service-heading">Lorem ipsum dolor sit</p>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 <?= $footer ?>
