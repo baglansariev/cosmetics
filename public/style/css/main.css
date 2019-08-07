@@ -14,7 +14,7 @@ a:hover{
 }
 section{
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 }
 header{
 	width: 100%;
@@ -118,7 +118,7 @@ header{
 	color: #fff;
 }
 .main-slider{
-	height: 90vh;
+	min-height: 90vh;
 }
 .slider, .item{
 	width: 100%;
@@ -271,8 +271,75 @@ header{
 	text-align: center;
 	margin-top: 20px;
 }
-
-
+.course-1{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.course-1::after{
+	content: '';
+	position: absolute;
+	width: 80%;
+	height: 90%;
+	top: 0;
+	left: 0;
+	background-color: #EFEFFB;
+	z-index: -1;
+}
+.course-content{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.course-image{
+	width: 40%;
+	margin-right: 50px;
+}
+.course-image img{
+	width: 100%;
+	height: auto;
+}
+.course-text{
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+.course-subtitle{
+	font-family: 'Marck Script', cursive;
+	margin-bottom: 0;
+	font-size: 40px;
+	color: #FBA87F;
+}
+.course-title{
+	text-transform: uppercase;
+	font-size: 45px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+.course-intro-text{
+	color: #818181;
+}
+.course-text button{
+	border: none;
+	align-self: flex-start;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	cursor: pointer;
+	-webkit-transition: propall ease 0.4s;
+	-moz-transition: all ease 0.4s;
+	-ms-transition: all ease 0.4s;
+	-o-transition: all ease 0.4s;
+	transition: all ease 0.4s;
+	background-color: #FBA880;
+}
+.course-text button:hover{
+	background-color: #FEEBDD;
+}
 
 
 
@@ -302,11 +369,19 @@ header{
 	}
 }
 @media screen and (max-width: 925px){
+	.main-slider{
+		min-height: 80vh;
+	}
 	.slide-title{
 		font-size: 30px;
 	}
 	.owl-nav{
 		top: 35%;
+	}
+}
+@media screen and (max-width: 855px){
+	.main-slider{
+		min-height: 70vh;
 	}
 }
 @media screen and (max-width: 805px){
@@ -337,6 +412,9 @@ header{
 	}
 }
 @media screen and (max-width: 695px){
+	.main-slider{
+		min-height: 60vh;
+	}
 	.slide-title{
 		font-size: 20px;
 	}
@@ -352,6 +430,12 @@ header{
 	}
 }
 @media screen and (max-width: 625px){
+	.services-title, .services-subtitle{
+		font-size: 30px;
+	}
+	.services-micro-subtitle{
+		width: 80%;
+	}
 	.header-top{
 		height: 170px;
 		justify-content: space-around;
@@ -363,7 +447,10 @@ header{
 		width: 35%;
 	}
 }
-@media screen and (max-width: 505px){
+@media screen and (max-width: 520px){
+	.main-slider{
+		min-height: 50vh;
+	}
 	.slide-title{
 		font-size: 15px;
 	}
@@ -379,6 +466,12 @@ header{
 	}
 }
 @media screen and (max-width: 435px){
+	.services-micro-subtitle{
+		width: 90%;
+	}
+	.main-slider{
+		min-height: 40vh;
+	}
 	.slide-text{
 		width: 52%;
 	}
@@ -397,6 +490,9 @@ header{
 	}
 }
 @media screen and (max-width: 385px){
+	.main-slider{
+		min-height: 30vh;
+	}
 	.slide-title{
 		font-size: 12px;
 	}

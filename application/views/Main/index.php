@@ -62,5 +62,22 @@
             </div>
         </div>
     </section>
+    <section class="course-1">
+        <div class="course-content">
+            <div class="course-image">
+                <img src="/public/images/course-1.jpg" alt="">
+            </div>
+            <div class="course-text">
+                <p class="course-subtitle">Первый курс - 5000 тг</p>
+                <p class="course-title">Сам себе косметолог</p>
+                <p class="course-intro-text">
+                    Данный курс включает в себя 2 занятия. Запись на обучение предварительная, предоплата 100%.
+                </p>
+                <button type="button">Программа обучения</button>
+            </div>
+        </div>
+    </section>
+<!--    <section class="course-2"></section>-->
+<!--    <section class="course-3"></section>-->
 </main>
 <?= $footer ?>
