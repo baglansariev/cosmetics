@@ -24,7 +24,9 @@
         </div>
     </div>
     <div class="header-bottom">
-        <i class="fas fa-bars"></i>
+        <span class="mobile-burger">
+            <i class="fas fa-bars"></i>
+        </span>
         <nav class="desktop-menu">
             <ul>
                 <li>
@@ -45,5 +47,29 @@
             </ul>
         </nav>
         <button id="appointment" type="button">Записаться</button>
+        <div class="mobile-menu">
+            <nav class="nav-mobile-menu">
+                <span class="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </span>
+                <ul>
+                    <li>
+                        <a href="">Главная</a>
+                    </li>
+                    <li>
+                        <a href="">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="">О нас</a>
+                    </li>
+                    <li>
+                        <a href="">Курсы</a>
+                    </li>
+                    <li>
+                        <a href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </header>

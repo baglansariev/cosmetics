@@ -49,6 +49,7 @@ header{
 	margin-left: 7px;
 }
 .header-bottom{
+	position: relative;
 	width: 100%;
 	height: 70px;
 	display: flex;
@@ -118,7 +119,9 @@ header{
 	color: #fff;
 }
 .main-slider{
-	min-height: 90vh;
+	min-height: auto;
+	height: auto;
+	margin-bottom: 40px;
 }
 .slider, .item{
 	width: 100%;
@@ -271,12 +274,12 @@ header{
 	text-align: center;
 	margin-top: 20px;
 }
-.course-1{
+.course-1, .course-3{
 	display: flex;
 	align-items: center;
 	position: relative;
 }
-.course-1::after{
+.course-1::after, .course-3::after{
 	content: '';
 	position: absolute;
 	width: 80%;
@@ -295,6 +298,7 @@ header{
 .course-image{
 	width: 40%;
 	margin-right: 50px;
+	flex-basis: 450px;
 }
 .course-image img{
 	width: 100%;
@@ -304,6 +308,8 @@ header{
 	display: flex;
 	flex-direction: column;
 	width: 40%;
+	flex-basis: 450px;
+	margin: 30px 0;
 }
 .course-subtitle{
 	font-family: 'Marck Script', cursive;
@@ -340,6 +346,159 @@ header{
 .course-text button:hover{
 	background-color: #FEEBDD;
 }
+.course-2{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.course-2::after{
+	content: '';
+	position: absolute;
+	width: 80%;
+	height: 90%;
+	top: 0;
+	right: 0;
+	background-color: #FEEBDD;
+	z-index: -1;
+}
+.course-2 .course-content .course-image{
+	margin-right: 0;
+	margin-left: 25px;
+}
+.course-2 .course-content .course-text{
+	text-align: right;
+}
+.course-2 .course-content .course-text .course-subtitle{
+	color: #7F73BB;
+}
+.course-2 .course-content button{
+	align-self: flex-end;
+	background-color: #7F73BB;
+}
+.course-2 .course-content button:hover{
+	background-color: #EFEFFB;
+}
+.course-desc{
+	position: fixed;
+	z-index: 999;
+	width: 50%;
+	height: 100%;
+	left: -100%;
+	top: 0;
+	background-color: rgba(127, 115, 187, 1);
+	padding: 40px;
+	overflow-y: scroll;
+}
+.course-desc-text{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+}
+.course-desc-close{
+	position: absolute;
+	top: -10px;
+	right: -20px;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+}
+.mobile-menu{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: -100%;
+	background-color: #171928;
+	color: #fff;
+	z-index: 999;
+	padding: 40px;
+}
+.nav-mobile-menu ul{
+	position: relative;
+	margin-top: 20px;
+	list-style-type: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 600;
+	-webkit-transition: all ease 0.2s;
+	-moz-transition: all ease 0.2s;
+	-ms-transition: all ease 0.2s;
+	-o-transition: all ease 0.2s;
+	transition: all ease 0.2s;
+}
+.nav-mobile-menu ul li{
+	margin-bottom: 15px;
+}
+.nav-mobile-menu ul li:hover{
+	color: #7873BB;
+}
+.mobile-menu-close{
+	font-size: 25px;
+	color: #FBA87F;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	cursor: pointer;
+}
+.about-us-content{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	min-height: 500px;
+	background-image: url('/public/images/about-us.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.about-us-text{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 40px;
+}
+.about-us-title{
+	font-family: 'Marck Script', cursive;
+	font-size: 50px;
+	color: #FBA880;
+	margin-bottom: 0;
+}
+.about-us-subtitle{
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.about-us-intro-text{
+	font-size: 18px;
+	color: #818181;
+	text-align: center;
+}
+.about-us-button{
+	padding: 10px 20px;
+	border: none;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 18px;
+	-webkit-transition: all ease 0.4s;
+	-moz-transition: all ease 0.4s;
+	-ms-transition: all ease 0.4s;
+	-o-transition: all ease 0.4s;
+	transition: all ease 0.4s;
+	background-color: #7F73BB;
+}
+.about-us-button:hover{
+	background-color: #FBA880;
+}
+
+
+
+
+
+
 
 
 
@@ -357,10 +516,31 @@ header{
 	.slide-title{
 		font-size: 45px;
 	}
+	.course-1::after{
+		height: 80%;
+		width: 90%;
+	}
 }
 @media screen and (max-width: 1140px){
 	.slide-title{
 		font-size: 40px;
+	}
+	.course-1::after{
+		top: 10%;
+	}
+}
+@media screen and (max-width: 1060px){
+	.course-desc{
+		width: 60%;
+	}
+	.course-1::after{
+		height: 70%;
+	}
+	.course-title{
+		font-size: 30px;
+	}
+	.course-subtitle{
+		font-size: 30px;
 	}
 }
 @media screen and (max-width: 1035px){
@@ -369,8 +549,8 @@ header{
 	}
 }
 @media screen and (max-width: 925px){
-	.main-slider{
-		min-height: 80vh;
+	.course-desc{
+		width: 70%;
 	}
 	.slide-title{
 		font-size: 30px;
@@ -378,10 +558,9 @@ header{
 	.owl-nav{
 		top: 35%;
 	}
-}
-@media screen and (max-width: 855px){
-	.main-slider{
-		min-height: 70vh;
+	.course-1::after{
+		height: 60%;
+		top: 20%;
 	}
 }
 @media screen and (max-width: 805px){
@@ -412,8 +591,11 @@ header{
 	}
 }
 @media screen and (max-width: 695px){
-	.main-slider{
-		min-height: 60vh;
+	.course-desc{
+		width: 80%;
+	}
+	.course-desc-text{
+		font-size: 14px;
 	}
 	.slide-title{
 		font-size: 20px;
@@ -448,8 +630,8 @@ header{
 	}
 }
 @media screen and (max-width: 520px){
-	.main-slider{
-		min-height: 50vh;
+	.course-desc{
+		width: 90%;
 	}
 	.slide-title{
 		font-size: 15px;
@@ -469,9 +651,6 @@ header{
 	.services-micro-subtitle{
 		width: 90%;
 	}
-	.main-slider{
-		min-height: 40vh;
-	}
 	.slide-text{
 		width: 52%;
 	}
@@ -490,9 +669,6 @@ header{
 	}
 }
 @media screen and (max-width: 385px){
-	.main-slider{
-		min-height: 30vh;
-	}
 	.slide-title{
 		font-size: 12px;
 	}

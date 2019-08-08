@@ -46,4 +46,41 @@ $(function(){
     $('.service').on('mouseleave', function () {
         $(this).find('.service-img-cover').fadeOut();
     });
+
+    $('.mobile-burger').click(function () {
+        $('.mobile-menu').animate({
+            right: '0',
+        }, 500);
+    });
+
+    $('.mobile-menu-close').click(function () {
+        $('.mobile-menu').animate({
+            right: '-100%',
+        }, 500);
+    });
+
+    $('.course-1 .course-button').click(function () {
+        $(this).parents().find('.course-1 .course-desc').animate({
+            left: '0',
+        }, 500);
+    });
+
+    $('.course-2 .course-button').click(function () {
+        $('.course-2 .course-desc').css('background-color', 'rgba(251, 168, 127, 1)');
+        $(this).parents().find('.course-2 .course-desc').animate({
+            left: '0',
+        }, 500);
+    });
+
+    $('.course-3 .course-button').click(function () {
+        $(this).parents().find('.course-3 .course-desc').animate({
+            left: '0',
+        }, 500);
+    });
+
+    $('.course-desc-close').click(function () {
+        $('.course-desc').animate({
+            left: '-100%',
+        }, 500);
+    })
 });
