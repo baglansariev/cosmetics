@@ -11,6 +11,14 @@
 	    	$this->view->asset->setMetaDesc('Тестовое описание');
 	    	$this->view->asset->setMetaKeys('ключ1, ключ2');
 	    	$this->view->asset->setTitle('Главная');
+
+	    	$data['header'] = $this->load->controller('common/header');
+	    	$data['footer'] = $this->load->controller('common/footer');
+	    	$this->view->response('Main/index', $data);
+	    }
+
+	    public function mailAction()
+        {
             $json = array();
 
             // Modal form send
@@ -31,9 +39,9 @@
                 }
                 $this->response->outputJSON($json);
             }
-
             // Main form send
-            if($this->request->has('main-name') && $this->request->has('main-phone') && $this->request->has('main-message')){
+            else if($this->request->has('main-name') && $this->request->has('main-phone') && $this->request->has('main-message')){
+                $json['success'] = 'YES';
                 $name = $this->request->post['main-name'];
                 $phone = $this->request->post['main-phone'];
                 $message = $this->request->post['main-message'];
@@ -50,9 +58,8 @@
                 }
                 $this->response->outputJSON($json);
             }
-
-	    	$data['header'] = $this->load->controller('common/header');
-	    	$data['footer'] = $this->load->controller('common/footer');
-	    	$this->view->response('Main/index', $data);
-	    }
+            else{
+                $this->view->errorResponse('errors/404', 404);
+            }
+        }
 	}

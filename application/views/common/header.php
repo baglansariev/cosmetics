@@ -1,13 +1,13 @@
 <header id="header">
     <div class="header-top">
         <div class="top-social-networks">
-            <a href="">
+            <a target="_blank" href="https://www.instagram.com/saule_cosmetolog_estet/">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="">
-                <i class="fab fa-vk"></i>
+            <a target="_blank" href="https://www.facebook.com/cosmetolog.saule/">
+                <i class="fab fa-facebook"></i>
             </a>
-            <a href="mailto:baglansariev@mail.ru">
+            <a href="mailto:estaisaule@mail.ru">
                 <i class="far fa-envelope"></i>
             </a>
         </div>
@@ -19,7 +19,7 @@
         <div class="top-phone">
             <a href="tel:+77024441143">
                 <i class="fas fa-phone-alt"></i>
-                <span>213-334-3688</span>
+                <span>+7 777 329 72 00</span>
             </a>
         </div>
     </div>

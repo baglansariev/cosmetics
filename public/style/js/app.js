@@ -126,4 +126,51 @@ $(function(){
             scrollTop: $('#main').offset().top
         }, 1000);
     });
+
+    var modalFormButton = $('#modal-send');
+    var mainFormButton = $('#main-send');
+    modalFormButton.click(function (e) {
+        e.preventDefault();
+
+        if($('[name=modal-captcha]').val() == 12){
+            ajaxMessageSend(modalFormButton, $('.modal-feedback form').serialize());
+        }
+        else{
+            modalFormButton.before('<i style="color: red;">Ответ на контрольный вопрос неверный<i>');
+        }
+    });
+
+    mainFormButton.click(function (e) {
+        e.preventDefault();
+
+        if($('[name=main-captcha]').val() == 12){
+            ajaxMessageSend(mainFormButton, $('.modal-feedback form').serialize());
+        }
+        else{
+            mainFormButton.before('<i style="color: red;">Ответ на контрольный вопрос неверный<i>');
+        }
+    });
+
+    function ajaxMessageSend(button, data){
+        $.ajax({
+            type: "POST",
+            url: "/mail",
+            data: data,
+            dataType: "JSON",
+            success: function(ans) {
+                if(ans.success){
+                    button.before('<i style="color: #fff;">' + ans.success + '<i>');
+                    setTimeout(function () {
+                        location.reload();
+                    }, 2000);
+                }
+                if(ans.error){
+                    button.before('<i style="color: red;">' + ans.error + '<i>');
+                }
+            },
+            error: function(ans){
+                console.log(ans);
+            }
+        });
+    }
 });

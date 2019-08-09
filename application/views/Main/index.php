@@ -33,9 +33,8 @@
             <p class="services-subtitle">Добро пожаловать!</p>
             <p class="services-title">Наши услуги</p>
             <p class="services-micro-subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Maiores, nisi, unde. Aut dignissimos enim et ex in natus sit veritatis voluptatem!
-                Maiores, nisi, unde. Aut dignissimos enim et ex in natus sit veritatis voluptatem!
+                Наша компания является одной из самых оснащенных косметологических компаний в Шымкенте.
+                Здесь собраны все самые современные и надежно зарекомендовавшие себя косметологические технологии.
             </p>
             <div class="service-list">
                 <div class="service">
@@ -43,21 +42,36 @@
                         <img src="/public/images/service-1.jpg" alt="">
                         <span class="service-img-cover"></span>
                     </div>
-                    <p class="service-heading">Lorem ipsum dolor sit</p>
+                    <ul>
+                        <li>Чистка лица - 5000 тг</li>
+                        <li>Массаж лица - 2500 тг</li>
+                        <li>Омолаживающая процедура - 5000 тг</li>
+                        <li>Осветление с rejuvi - 5000 тг</li>
+                    </ul>
                 </div>
                 <div class="service">
                     <div class="service-image">
                         <img src="/public/images/service-2.jpg" alt="">
                         <span class="service-img-cover"></span>
                     </div>
-                    <p class="service-heading">Lorem ipsum dolor sit</p>
+                    <ul>
+                        <li>Фракционная мезо-терапия - 6000 тг</li>
+                        <li>Все виды пиллингов - от 4000 тг</li>
+                        <li>Французский пиллинг - 10000 тг</li>
+                        <li>Корейский пиллинг Re Derma beel - 8000 тг</li>
+                    </ul>
                 </div>
                 <div class="service">
                     <div class="service-image">
                         <img src="/public/images/service-3.jpg" alt="">
                         <span class="service-img-cover"></span>
                     </div>
-                    <p class="service-heading">Lorem ipsum dolor sit</p>
+                    <ul>
+                        <li>РФ лица - от 3000 тг</li>
+                        <li>Карбокси-терапия - 4000 тг</li>
+                        <li>Кавитация - 3000 тг</li>
+                        <li>Вакуумный массаж - 2000 тг</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -219,7 +233,7 @@
                     <span>г.Шымкент, Байтурсынова 18, студия Сании Илиясовой</span>
                 </p>
             </div>
-            <div class="feedback">
+            <div class="feedback main-feedback">
                 <div class="feedback-title">Напишите нам</div>
                 <form method="post">
                     <div class="user-data">
@@ -231,7 +245,7 @@
                         <input type="text" name="main-subject" placeholder="Тема">
                     </div>
                     <textarea name="main-message" placeholder="СООБЩЕНИЕ" required></textarea>
-                    <input type="submit" value="отправить">
+                    <input type="submit" value="отправить" id="main-send">
                 </form>
             </div>
         </div>
@@ -252,7 +266,7 @@
                     <input type="text" name="modal-course" placeholder="Название курса">
                 </div>
                 <textarea name="modal-message" placeholder="СООБЩЕНИЕ" required></textarea>
-                <input type="submit" value="отправить">
+                <input type="submit" value="отправить" id="modal-send">
             </form>
         </div>
     </div>
