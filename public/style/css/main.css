@@ -493,7 +493,107 @@ header{
 .about-us-button:hover{
 	background-color: #FBA880;
 }
+.contact-us-content{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.contacts, .feedback{
+	width: 47%;
+	display: flex;
+	flex-direction: column;
+	min-height: 323px;
+	padding: 30px;
+	color: #fff;
+}
+.contacts{
+	background-color: #FBA880;
+}
+.feedback{
+	background-color: #7F73BB;
+}
+.contacts-title, .feedback-title{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 26px;
+}
+.feedback-title{
+	margin-bottom: 15px;
+}
+.contacts p{
+	display: flex;
+	flex-direction: column;
+	margin: 5px 20px;
+	border-bottom: 1px solid #fff;
+}
+.contacts p:first-of-type{
+	border: none;
+}
+.contacts p span:first-of-type{
+	font-weight: bold;
+}
+.feedback form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.user-data{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.user-data input{
+	width: 48%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #a1a1a1;
+	padding: 0 10px;
+	color: #fff;
+}
+.user-data input:focus{
+	outline: none;
+	border-bottom: 1px solid #fff;
+}
+::-webkit-input-placeholder { color: #fff; }
+::-moz-placeholder          { color: #fff; }
+:-moz-placeholder           { color: #fff; }
+:-ms-input-placeholder      { color: #fff; }
 
+.feedback form textarea{
+	width: 100%;
+	height: 100px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #a1a1a1;
+	margin-bottom: 20px;
+	color: #fff;
+}
+.feedback form textarea:focus{
+	outline: none;
+	border-bottom: 1px solid #fff;
+}
+.feedback form input[type="submit"]{
+	color: #fff;
+	border: none;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background-color: #171928;
+	-webkit-transition: all ease 0.4s;
+	-moz-transition: all ease 0.4s;
+	-ms-transition: all ease 0.4s;
+	-o-transition: all ease 0.4s;
+	transition: all ease 0.4s;
+	padding: 10px 25px;
+	text-transform: uppercase;
+}
+.feedback form input[type="submit"]:hover{
+	background-color: #FBA880;
+}
 
 
 

@@ -223,10 +223,10 @@
                 <div class="feedback-title">Напишите нам</div>
                 <form method="post">
                     <div class="user-data">
-                        <input type="text" name="name" placeholder="Ф.И.О.">
-                        <input type="text" name="phone" placeholder="НОМЕР">
+                        <input type="text" name="name" placeholder="Ф.И.О." required>
+                        <input type="text" name="phone" placeholder="НОМЕР" required>
                     </div>
-                    <textarea name="message" placeholder="СООБЩЕНИЕ"></textarea>
+                    <textarea name="message" placeholder="СООБЩЕНИЕ" required></textarea>
                     <input type="submit" value="отправить">
                 </form>
             </div>
