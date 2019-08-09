@@ -84,6 +84,9 @@ $(function(){
         }, 500);
     });
 
+    $('.slide-button').click(function () {
+        $('.contact-form').fadeIn();
+    });
     $('#appointment').click(function(){
         $('.contact-form').fadeIn();
     });
