@@ -226,7 +226,7 @@
                 </p>
                 <p class="adress">
                     <span>E-mail:</span>
-                    <span>example@test.com</span>
+                    <span>estaisaule@mail.ru</span>
                 </p>
                 <p class="adress">
                     <span>Адресс:</span>
