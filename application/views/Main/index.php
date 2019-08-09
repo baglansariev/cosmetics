@@ -184,7 +184,7 @@
             </div>
             <div class="course-text">
                 <p class="course-subtitle">Третий курс 100 000 тг</p>
-                <p class="course-title">Провессионал</p>
+                <p class="course-title">Профессионал</p>
                 <p class="course-intro-text">
                     Все занятия данного курса являются индивидуальными. Запись на обучение предварительная, предоплата 100%.
                 </p>
