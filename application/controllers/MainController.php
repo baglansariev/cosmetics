@@ -8,9 +8,9 @@
 
 	    public function indexAction()
 	    {
-	    	$this->view->asset->setMetaDesc('Тестовое описание');
-	    	$this->view->asset->setMetaKeys('ключ1, ключ2');
-	    	$this->view->asset->setTitle('Главная');
+	    	$this->view->asset->setMetaDesc('Cosmetolog estet или Estai Saule cosmetolog estet это услуги косметологии в шымкенте.');
+	    	$this->view->asset->setMetaKeys('Косметолог Естай Сауле, Косметолог эстет, Cosmetolog-estet, estai saule');
+	    	$this->view->asset->setTitle('Курсы косметологии в Шымкенте');
 
 	    	$data['header'] = $this->load->controller('common/header');
 	    	$data['footer'] = $this->load->controller('common/footer');
