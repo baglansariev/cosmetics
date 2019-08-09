@@ -30,19 +30,19 @@
         <nav class="desktop-menu">
             <ul>
                 <li>
-                    <a href="">Главная</a>
+                    <a href="#main">Главная</a>
                 </li>
                 <li>
-                    <a href="">Услуги</a>
+                    <a href="#services">Услуги</a>
                 </li>
                 <li>
-                    <a href="">О нас</a>
+                    <a href="#about-us">О нас</a>
                 </li>
                 <li>
-                    <a href="">Курсы</a>
+                    <a href="#courses">Курсы</a>
                 </li>
                 <li>
-                    <a href="">Контакты</a>
+                    <a href="#contacts">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -54,19 +54,19 @@
                 </span>
                 <ul>
                     <li>
-                        <a href="">Главная</a>
+                        <a href="#main">Главная</a>
                     </li>
                     <li>
-                        <a href="">Услуги</a>
+                        <a href="#services">Услуги</a>
                     </li>
                     <li>
-                        <a href="">О нас</a>
+                        <a href="#about-us">О нас</a>
                     </li>
                     <li>
-                        <a href="">Курсы</a>
+                        <a href="#courses">Курсы</a>
                     </li>
                     <li>
-                        <a href="">Контакты</a>
+                        <a href="#contacts">Контакты</a>
                     </li>
                 </ul>
             </nav>

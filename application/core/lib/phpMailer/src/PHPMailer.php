@@ -18,6 +18,7 @@
  * FITNESS FOR A PARTICULAR PURPOSE.
  */
 
+    namespace core\lib\phpMailer\src;
 //namespace PHPMailer\PHPMailer;
 
 /**

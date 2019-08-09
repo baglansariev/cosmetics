@@ -4,6 +4,7 @@
 body{
 	padding: 0 40px !important;
 	width: 100%;
+	position: relative;
 }
 a{
 	text-decoration: none;
@@ -15,6 +16,7 @@ a:hover{
 section{
 	width: 100%;
 	min-height: 100vh;
+	margin-bottom: 20px;
 }
 header{
 	width: 100%;
@@ -28,6 +30,8 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 2px solid #F2F2F2;
+	background-color: #fff;
+	z-index: 999;
 }
 .top-social-networks{
 	color: #CECFD0;
@@ -55,6 +59,8 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #fff;
+	z-index: 999;
 }
 .fa-bars{
 	display: none;
@@ -504,7 +510,7 @@ header{
 	width: 47%;
 	display: flex;
 	flex-direction: column;
-	min-height: 323px;
+	min-height: 370px;
 	padding: 30px;
 	color: #fff;
 }
@@ -594,6 +600,84 @@ header{
 .feedback form input[type="submit"]:hover{
 	background-color: #FBA880;
 }
+footer{
+	width: 100%;
+	height: 70px;
+	border-top: 1px solid #F2F2F2;
+	position: relative;
+}
+.footer-sign{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 10px;
+}
+.client-sign a, .developer-sign a{
+	font-weight: bold;
+	-webkit-transition: all ease 0.4s;
+	-moz-transition: all ease 0.4s;
+	-ms-transition: all ease 0.4s;
+	-o-transition: all ease 0.4s;
+	transition: all ease 0.4s;
+}
+.client-sign a:hover, .developer-sign a:hover{
+	color: #7F73BB;
+	font-style: italic;
+}
+.go-to-top{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	border: 3px solid #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	right: 60px;
+	bottom: 10%;
+	background-color: #7F73BB;
+	color: #fff;
+	font-size: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.5;
+	z-index: 999;
+	-webkit-transition: all ease 0.4s;
+	-moz-transition: all ease 0.4s;
+	-ms-transition: all ease 0.4s;
+	-o-transition: all ease 0.4s;
+	transition: all ease 0.4s;
+}
+.go-to-top:hover{
+	opacity: 1;
+}
+.contact-form{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 999;
+	display: none;
+	cursor: pointer;
+}
+.modal-feedback{
+	position: relative;
+	margin: 60px auto;
+	
+}
+.modal-feedback-close{
+	position: absolute;
+	font-size: 26px;
+	color: #fff;
+	cursor: pointer;
+	top: -30px;
+	right: -20%;
+}
 
 
 
@@ -642,10 +726,18 @@ header{
 	.course-subtitle{
 		font-size: 30px;
 	}
+	.contacts, .feedback{
+		min-width: 460px;
+	}
 }
 @media screen and (max-width: 1035px){
 	.slide-title{
 		font-size: 35px;
+	}
+}
+@media screen and (max-width: 999px){
+	.contacts{
+		margin-bottom: 30px;
 	}
 }
 @media screen and (max-width: 925px){
@@ -664,6 +756,9 @@ header{
 	}
 }
 @media screen and (max-width: 805px){
+	.about-us-text{
+		width: 70%;
+	}
 	.desktop-menu{
 		display: none;
 	}
@@ -710,6 +805,9 @@ header{
 	.owl-nav{
 		top: 25%;
 	}
+	.modal-feedback-close{
+		right: -10%;
+	}
 }
 @media screen and (max-width: 625px){
 	.services-title, .services-subtitle{
@@ -728,6 +826,11 @@ header{
 		height: 40px;
 		width: 35%;
 	}
+	.modal-feedback-close{
+		right: 20px;
+		top: auto;
+		bottom: 50px;
+	}
 }
 @media screen and (max-width: 520px){
 	.course-desc{
@@ -745,6 +848,28 @@ header{
 	}
 	.owl-nav{
 		top: 20%;
+	}
+	.about-us-text{
+		width: 80%;
+	}
+	.footer-sign{
+		flex-direction: column;
+		padding-top: 10px;
+	}
+}
+@media screen and (max-width: 462px){
+	.contacts, .feedback{
+		min-width: 100%;
+	}
+	.user-data{
+		flex-direction: column;
+	}
+	.user-data input{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.footer-sign{
+		font-size: 14px;
 	}
 }
 @media screen and (max-width: 435px){
@@ -767,6 +892,12 @@ header{
 	.owl-nav{
 		top: 15%;
 	}
+	.about-us-text{
+		width: 100%;
+	}
+	.about-us-intro-text{
+		font-size: 14px;
+	}
 }
 @media screen and (max-width: 385px){
 	.slide-title{
@@ -778,5 +909,8 @@ header{
 	.slide-button{
 		width: 50%;
 		height: 30px;
+	}
+	.about-us-subtitle{
+		font-size: 30px;
 	}
 }

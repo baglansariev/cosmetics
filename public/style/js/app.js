@@ -1,5 +1,5 @@
 $(function(){
-
+    $('.phone_mask').mask('+7(999)999-99-99', {autoclear: false});
     $('.slider').owlCarousel({
         loop:true,
         margin:10,
@@ -82,5 +82,48 @@ $(function(){
         $('.course-desc').animate({
             left: '-100%',
         }, 500);
-    })
+    });
+
+    $('#appointment').click(function(){
+        $('.contact-form').fadeIn();
+    });
+    $('.about-us-button').click(function () {
+        $('.contact-form').fadeIn();
+    });
+
+    $('.modal-feedback-close').click(function(){
+        $('.contact-form').fadeOut();
+    });
+
+    $('.contact-form').click(function(e){
+        if(e.target == $('.contact-form')[0]){
+            $('.contact-form').fadeOut();
+        }
+    });
+
+    $('.desktop-menu ul li a').click(function(e) {
+        e.preventDefault();
+        var id = $(this).attr('href');
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(id).offset().top
+        }, 1000);
+    });
+
+    $('.mobile-menu ul li a').click(function(e) {
+        e.preventDefault();
+        var id = $(this).attr('href');
+        $('.mobile-menu').animate({
+            right: '-100%',
+        }, 500);
+
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(id).offset().top
+        }, 1000);
+    });
+
+    $('.go-to-top').click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $('#main').offset().top
+        }, 1000);
+    });
 });

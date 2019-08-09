@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="/public/style/bootstrap/bootstrap.css">
     <link  rel="stylesheet" href="/public/style/owl-carousel/owl.carousel.min.css">
     <link  rel="stylesheet" href="/public/style/owl-carousel/owl.theme.default.min.css">
-    <!--	<link rel="stylesheet" href="/public/style/onepage-scroll/onepage-scroll.css">-->
     <link rel="stylesheet" href="/public/style/css/main.css">
     <? foreach($this->asset->getCss() as $css): ?>
 	<link rel="stylesheet" href="<?= $css ?>">
@@ -23,7 +22,7 @@
 	<script type="text/javascript" src="/public/style/js/jquery-3.4.0.min.js"></script>
     <script type="text/javascript" src="/public/style/font-awesome/js/all.min.js"></script>
     <script type="text/javascript" src="/public/style/owl-carousel/owl.carousel.min.js"></script>
-<!--    <script type="text/javascript" src="/public/style/onepage-scroll/onepagescroll.js"></script>-->
+    <script type="text/javascript" src="/public/style/js/masked_input.js"></script>
 	<script type="text/javascript" src="/public/style/js/app.js"></script>
 	<? foreach($this->asset->getJs() as $js): ?>
 	<script type="text/javascript" src="<?= $js ?>"></script>

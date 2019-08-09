@@ -1,6 +1,6 @@
 <?= $header ?>
 <main class="main">
-    <section class="main-slider">
+    <section class="main-slider" id="main">
         <div class="slider owl-carousel">
             <div class="item">
                 <img src="/public/images/slider_1_1.jpg" alt="">
@@ -28,7 +28,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="services-row">
             <p class="services-subtitle">Добро пожаловать!</p>
             <p class="services-title">Наши услуги</p>
@@ -62,7 +62,7 @@
             </div>
         </div>
     </section>
-    <section class="course-1">
+    <section class="course-1" id="courses">
         <div class="course-content">
             <div class="course-image">
                 <img src="/public/images/course-1.jpg" alt="">
@@ -188,7 +188,7 @@
             </div>
         </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about-us">
         <div class="about-us-content">
             <div class="about-us-text">
                 <p class="about-us-title">О нас</p>
@@ -202,7 +202,7 @@
             </div>
         </div>
     </section>
-    <section class="contact-us">
+    <section class="contact-us" id="contacts">
         <div class="contact-us-content">
             <div class="contacts">
                 <p class="contacts-title">Наши контакты</p>
@@ -223,14 +223,38 @@
                 <div class="feedback-title">Напишите нам</div>
                 <form method="post">
                     <div class="user-data">
-                        <input type="text" name="name" placeholder="Ф.И.О." required>
-                        <input type="text" name="phone" placeholder="НОМЕР" required>
+                        <input type="text" name="main-name" placeholder="Ф.И.О." required>
+                        <input type="text" name="main-phone" class="phone_mask" placeholder="НОМЕР" required>
                     </div>
-                    <textarea name="message" placeholder="СООБЩЕНИЕ" required></textarea>
+                    <div class="user-data">
+                        <input type="text" name="main-captcha" placeholder="3 x 4 = ?" required>
+                        <input type="text" name="main-subject" placeholder="Тема">
+                    </div>
+                    <textarea name="main-message" placeholder="СООБЩЕНИЕ" required></textarea>
                     <input type="submit" value="отправить">
                 </form>
             </div>
         </div>
     </section>
+    <div class="contact-form">
+        <div class="feedback modal-feedback">
+            <span class="modal-feedback-close">
+                <i class="fas fa-times"></i>
+            </span>
+            <div class="feedback-title">Записаться на прием</div>
+            <form method="post">
+                <div class="user-data">
+                    <input type="text" name="modal-name" placeholder="Ф.И.О." required>
+                    <input type="text" name="modal-phone" class="phone_mask" placeholder="НОМЕР" required>
+                </div>
+                <div class="user-data">
+                    <input type="text" name="modal-captcha" placeholder="3 x 4 = ?" required>
+                    <input type="text" name="modal-course" placeholder="Название курса">
+                </div>
+                <textarea name="modal-message" placeholder="СООБЩЕНИЕ" required></textarea>
+                <input type="submit" value="отправить">
+            </form>
+        </div>
+    </div>
 </main>
 <?= $footer ?>
