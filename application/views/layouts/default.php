@@ -43,6 +43,15 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/54889543" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135763668-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-135763668-3');
+    </script>
 </head>
 <body>
 	<?= $content ?>
