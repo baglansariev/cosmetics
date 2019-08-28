@@ -52,6 +52,7 @@
 
         gtag('config', 'UA-135763668-3');
     </script>
+    <script src="//code.jivosite.com/widget.js" data-jv-id="xseZLFraKv" async></script>
 </head>
 <body>
 	<?= $content ?>

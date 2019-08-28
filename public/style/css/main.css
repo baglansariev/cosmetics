@@ -479,10 +479,11 @@ header{
 	font-size: 40px;
 	font-weight: bold;
 	letter-spacing: 2px;
+	color: #fff;
 }
 .about-us-intro-text{
 	font-size: 18px;
-	color: #818181;
+	color: #fff;
 	text-align: center;
 }
 .about-us-button{
